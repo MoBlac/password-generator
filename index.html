@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- css File -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="card">
+        <header>
+            <img src="images/icons8-forgot-password-64.png" alt="">
+        </header>
+        
+        <section class="pass">
+            <p class="pp">Password</p>
+            <span class="co material-symbols-outlined">
+                content_copy
+            </span>
+        </section>
+
+        <section class="genPass">
+            <div class="len">
+                <span>Character Length</span>
+                <span id="lenNum">5</span>
+            </div>
+
+            <div class="lenOfPass">
+                <div class="track"></div>
+                <input type="range" min="5" max="20" value="5">
+            </div>
+
+            <div class="aboutPass">
+                <ul>
+                    <li>
+                        <input type="checkbox" id="up" checked>
+                        <label for="up">Include Uppercase Letters</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="lo">
+                        <label for="lo">Include Lowercase Letters</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="n">
+                        <label for="n">Include Numbers</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="s">
+                        <label for="s">Include Symbols</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="strength">
+                <span>STRENGTH</span>
+                <div>
+                    <h3 id="lvl">EASY</h3>
+                </div>
+            </div>
+
+            <div class="gen">
+                <button id="btn">GENERATOR <span class="material-symbols-outlined">
+                    chevron_right
+                </span></button>
+            </div>
+        </section>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

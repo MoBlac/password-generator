@@ -1,0 +1,262 @@
+/* start global */
+
+:root{
+    --bgBodyColor : #121212;
+    --bgCardColor : #2C3639;
+    --mainColor : #0075ff;
+    --textColor : #777;
+    --goldColor : #FFCD38;
+    --whiteColor : #fff;
+    --padding : 20px;
+    --margin: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* end global */
+
+body{
+    height: 100vh;
+    background-color: var(--bgBodyColor);
+    /* width: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* start card */
+
+.card{
+    min-width: 300px;
+}
+
+/* end card */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header span{
+    color: white;
+    font-size: 25px;
+}
+
+/* start pass */
+
+.card .pass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgCardColor);
+    padding: var(--padding);
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+    margin-top: 10px;
+}
+
+.pass p{
+    color: var(--whiteColor);
+    font-size: 20px;
+}
+
+.pass span{
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+/* end pass */
+
+/* start genPass */
+
+.card .genPass {
+    background-color: var(--bgCardColor);
+    padding: var(--padding);
+    margin-top: var(--margin);
+}
+
+/* start len */
+
+.genPass .len{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.len :nth-child(1){
+    color: var(--whiteColor);
+    font-size: 14px;
+}
+
+.len :nth-child(2) {
+    color: var(--mainColor);
+    font-size: 30px;
+}
+
+ /* end len */
+
+/* start lenOfPass */
+
+/* start lenOfPass */
+
+.genPass .lenOfPass{
+    margin-top: var(--margin);
+    position: relative;
+}
+
+.lenOfPass input{
+    width: 100%;
+    position: relative;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+
+
+.lenOfPass input::-webkit-slider-runnable-track {
+    background-color: var(--bgBodyColor);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.lenOfPass input::-webkit-slider-thumb {
+    margin-top: -1px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.lenOfPass .track{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 85%;
+    width: 0%;
+    background-image: linear-gradient(to right , white 5%, red);
+    border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    -o-border-radius: 15px 0 0 15px;
+    z-index: 1;
+}
+
+/* end lenOfPass */
+
+/* start aboutPass */
+
+.genPass .aboutPass {
+    margin-top: var(--margin);
+}
+
+.aboutPass ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutPass li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutPass li input{
+    width: 25px;
+    height: 25px;
+}
+
+.aboutPass li label{
+    color: var(--textColor);
+    font-size: 14px;
+}
+
+.aboutPass li input:checked + label{
+    color: var(--whiteColor);
+}
+
+/* end aboutPass */
+
+/* start strength */
+
+.genPass .strength{
+    margin-top: var(--margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgBodyColor);
+    padding: 10px;
+}
+
+.strength span{
+    color: var(--textColor);
+    font-size: 13px;
+}
+
+.strength h3{
+    color: var(--whiteColor);
+    letter-spacing: 3px;
+}
+
+/* end strength */
+
+/* start gen */
+
+.genPass .gen{
+    margin-top: var(--margin);
+}
+
+.gen button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: var(--bgBodyColor);
+    padding: 10px;
+    background-color: var(--mainColor);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+/* end gen */
+
+/* end genPass */
